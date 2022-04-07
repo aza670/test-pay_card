@@ -1,0 +1,14 @@
+.CardListItem {
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: black;
+    color: #fff;
+}
+.CardListItem img{
+    max-width: 40px;
+}
+.CardListItem ul{
+    list-style: none;
+}

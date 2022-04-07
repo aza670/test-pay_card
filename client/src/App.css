@@ -1,0 +1,15 @@
+a{
+  text-decoration: none;
+}
+.App {
+  background: #d3e9fc;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.btn{
+  background: white;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
