@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import CardListItem from "../CardListItem/CardListItem";
 import axios from 'axios'
+import CardListItem from "../CardListItem/CardListItem";
 import './style.css'
 
 const CardsList = () => {
@@ -13,13 +13,13 @@ const CardsList = () => {
     }, [])
 
     return (
-        <div className="CardsList">
-            {
+      <div className="CardsList">
+        {
                 cards.map((item) =>
-                 <CardListItem key={item._id} item={item}/>
+                  <CardListItem key={ item._id } item={ item } />
                 )
             }
-        </div>
+      </div>
     );
 };
 

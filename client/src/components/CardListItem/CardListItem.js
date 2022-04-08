@@ -16,57 +16,57 @@ const CardsListItem = ({item: {cardNumber, cardName, month, year}}) => {
             cardNumber.slice(0, 2) === '55'
         ) {
             return (
-                <img
-                    className="creditCard__front__dataCard__header--bank"
-                    src={masterCard}
-                    alt="bank"
-                    style={{ height: "40px" }}
-                />
+              <img
+                className="creditCard__front__dataCard__header--bank"
+                src={ masterCard }
+                alt="bank"
+                style={ { height: "40px" } }
+              />
             );
-        } else if (cardNumber.slice(0, 1) === '3') {
+        } if (cardNumber.slice(0, 1) === '3') {
             return (
-                <img
-                    className="creditCard__front__dataCard__header--bank"
-                    src={american}
-                    alt="bank"
-                />
+              <img
+                className="creditCard__front__dataCard__header--bank"
+                src={ american }
+                alt="bank"
+              />
             );
-        } else if (cardNumber.slice(0, 1) === '4') {
+        } if (cardNumber.slice(0, 1) === '4') {
             return (
-                <img
-                    className="creditCard__front__dataCard__header--bank"
-                    src={visa}
-                    alt="bank"
-                />
+              <img
+                className="creditCard__front__dataCard__header--bank"
+                src={ visa }
+                alt="bank"
+              />
             );
         }
         return (
-            <img
-                className="creditCard__front__dataCard__header--bank"
-                src={discover}
-                alt="bank"
-            />
+          <img
+            className="creditCard__front__dataCard__header--bank"
+            src={ discover }
+            alt="bank"
+          />
         );
     };
     return (
-        <div className="CardListItem">
-            <ul>
-                <li>
-                    <span>
-            {cardNumber.slice(0, 4)}
-          </span>
-                    <span>****</span>
-                    <span>****</span>
-                    <span>
-            {cardNumber.slice(12, 16)}
-          </span>
-                </li>
-                <li>Username: {cardName}</li>
-                <li>Month: {month}</li>
-                <li>Year: {year}</li>
-                <li>Bank holder: {changesBank()}</li>
-            </ul>
-        </div>
+      <div className="CardListItem">
+        <ul>
+          <li>
+            <span>
+              {cardNumber.slice(0, 4)}
+            </span>
+            <span>****</span>
+            <span>****</span>
+            <span>
+              {cardNumber.slice(12, 16)}
+            </span>
+          </li>
+          <li>Username: {cardName}</li>
+          <li>Month: {month}</li>
+          <li>Year: {year}</li>
+          <li>Bank holder: {changesBank()}</li>
+        </ul>
+      </div>
     );
 };
 
